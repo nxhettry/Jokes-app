@@ -14,19 +14,19 @@ body {
   align-items: center;
 }
 body h3 {
-  color: yellow;
-  background: rgba(255, 255, 255, 0.2);
+  color: #3F51B5;
+  background: rgba(255, 255, 255, 0.7);
   border: none;
-  border-radius: 25px;
+  border-radius: 12px;
+  padding: 5px;
   font-family: monospace;
-  font-size: 5vw;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
 .container {
-  background-color: rgb(2, 48, 71);
+  background-color: rgba(2, 48, 71, 0.8);
   height: 40%;
-  overflow-y: scroll;
   width: 45%;
   position: relative;
   border: 1px solid lightgray;
@@ -36,30 +36,23 @@ body h3 {
   justify-content: center;
   align-items: center;
 }
-.container .choices {
-  position: absolute;
-  top: 0px;
-  height: 50px;
-  width: 100%;
-  border-bottom: 1px solid gray;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: none;
-}
-.container .choices .button {
-  font-size: 1vw;
-  border: none;
-  border-radius: 12px;
-  background: none;
-  font-family: monospace;
-}
 
 .content {
-  margin: 15px auto;
+  padding: 20px;
 }
 .content p {
   font-family: "Happy Monkey", system-ui;
   font-size: 2vw;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.7);
+  height: 2rem;
+  color: #3F51B5;
+  margin: 20px auto;
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
 }/*# sourceMappingURL=style.css.map */

@@ -17,11 +17,12 @@
 }
 body{
     h3{
-        color: yellow;
-        background: rgb(255, 255, 255, 0.2);
-        @include border(none, 25px);
+        color: #3F51B5;
+        background: rgb(255, 255, 255, 0.7);
+        @include border(none, 12px);
+        padding: 5px;
         font-family: monospace;
-        font-size: 5vw;
+        font-size: 2.5rem;
         font-weight: bolder;
     }
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(3) rotate(175)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(200,94.5%,14.3%,1)'/><path d='M2.5 2.5L10 10l7.5-7.5h-15zM10 10l-7.5 7.5h15L10 10zm13.174 12.29l7.5 7.5 7.5-7.5h-15zm7.5 7.5l-7.5 7.5h15l-7.5-7.5z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='4' stroke='hsla(192,70.1%,43.3%,1)' fill='none'/><path d='M37.5 2.5L30 10l7.5 7.5zM30 10l-7.5-7.5v15zM17.5 22.5L10 30l7.5 7.5zM10 30l-7.5-7.5v15z'  stroke-linejoin='round' stroke-linecap='round' stroke-width='4' stroke='hsla(43,100%,50.6%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
@@ -30,35 +31,27 @@ body{
     @include flex(column, center, center);
 }
 .container{
-    background-color: rgb(2 48 71);
+    background-color: rgb(2, 48, 71, 0.8);
     height: 40%;
-    overflow-y: scroll;
     width: 45%;
     position: relative;
     @include border(1px solid lightgray, 12px);
     @include flex(column, center, center);
-
-    .choices{
-        position: absolute;
-        top: 0px;
-        height: 50px;
-        width: 100%;
-        border-bottom: 1px solid gray;
-        border-radius: 18px;
-        @include flex(row, space-around, none);
-        .button{
-            font-size: 1vw;
-            @include border(none, 12px);
-            background: none;
-            font-family: monospace;
-        }
-    }
-    
 }
 .content {
-    margin: 15px auto;
-        p{
-            @include monkey-font();
-            font-size: 2vw;
-        }
+    padding: 20px;    
+    p{
+        @include monkey-font();
+        font-size: 2vw;
     }
+}
+.btn {
+    background: rgb(255, 255, 255, 0.7);
+    height: 2rem;
+    color: #3F51B5;
+    margin: 20px auto;
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    @include border(none, 12px);
+}
